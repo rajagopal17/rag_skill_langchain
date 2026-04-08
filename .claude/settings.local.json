@@ -1,0 +1,21 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -c \"import zipfile; z = zipfile.ZipFile\\('rag_pipeline.zip'\\); print\\(z.read\\('rag_pipeline/SKILL.md'\\).decode\\(\\)\\)\")",
+      "Bash(python -c \"import zipfile; z = zipfile.ZipFile\\('rag_pipeline.zip'\\); content = z.read\\('rag_pipeline/SKILL.md'\\).decode\\('utf-8'\\); print\\(content\\)\")",
+      "Bash(python:*)",
+      "Bash(cp -r \"C:\\\\Users\\\\DELL\\\\.claude\\\\skills\\\\rag_pipeline\\\\skills\" \"C:\\\\Users\\\\DELL\\\\agentic-ai\\\\rag_skill_langchain\\\\skills\")",
+      "Bash(cp \"C:\\\\Users\\\\DELL\\\\.claude\\\\skills\\\\rag_pipeline\\\\main.py\" \"C:\\\\Users\\\\DELL\\\\agentic-ai\\\\rag_skill_langchain\\\\main.py\")",
+      "Bash(cp \"C:\\\\Users\\\\DELL\\\\.claude\\\\skills\\\\rag_pipeline\\\\requirements.txt\" \"C:\\\\Users\\\\DELL\\\\agentic-ai\\\\rag_skill_langchain\\\\requirements.txt\")",
+      "Bash(venv/Scripts/pip install:*)",
+      "Bash(venv/Scripts/python -c ':*)",
+      "Bash(PGPASSWORD=jaiganesh psql -h localhost -p 5434 -U postgres -l)",
+      "Bash(PYTHONIOENCODING=utf-8 venv/Scripts/python main.py)",
+      "Bash(curl:*)",
+      "Bash(taskkill /F /IM python.exe /T)",
+      "Bash(taskkill /F /IM uvicorn.exe /T)",
+      "Bash(taskkill //F //IM python.exe //T)",
+      "Bash(PGPASSWORD=jaiganesh psql:*)"
+    ]
+  }
+}
